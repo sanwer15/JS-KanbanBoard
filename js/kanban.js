@@ -40,7 +40,7 @@ const create_item = () => {
   save_btn.addEventListener('click', () => {
   error.innerHTML = '';
 
-  if (input.value != '') {
+  if (input.value !== '') {
     order += 1;
     item.innerHTML = input.value;
     adding = false;
@@ -65,7 +65,7 @@ document.querySelectorAll('.drop').forEach(element => {
   element.addEventListener('drop', (event) => {
     event.preventDefault();
     const id = event.dataTransfer.getData('text');
-    event.target.append(document.getElementById('id'));
+    event.target.append(document.getElementById(id));
   })
 
   element.addEventListener('dragover', (event) => {
