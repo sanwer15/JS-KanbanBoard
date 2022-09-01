@@ -21,6 +21,15 @@ const create_item = () => {
   item.id = 'item-'+order;
   item.draggable = true;
 
+  document.addEventListener("dragstart", (event) =>  {
+    return event.DataTransfer.setData('text', event.target.id);
+  })
+  
+  document.addEventListener("dragend", (event) => {
+    return event.DataTransfer.clearData(event);
+  
+  })
+
   let input = document.createElement('input');
 
   item.append(input);
@@ -47,14 +56,7 @@ const create_item = () => {
 
 };
 
-document.addEventListener("dragstart", (event) =>  {
-  return event.DataTransfer.setData('text', event.target.id);
-})
 
-document.addEventListener("dragend", (event) => {
-  return event.DataTransfer.clearData(event);
-
-})
 
 
 
