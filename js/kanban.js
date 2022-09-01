@@ -21,12 +21,12 @@ const create_item = () => {
   item.id = 'item-'+order;
   item.draggable = true;
 
-  item.addEventListener("dragstart", (event) =>  {
-    return event.DataTransfer.setData('text', event.target.id);
+  item.addEventListener('dragstart', (event) =>  {
+    event.DataTransfer.setData('text', event.target.id);
   })
   
   item.addEventListener("dragend", (event) => {
-    return event.DataTransfer.clearData(event);
+    event.DataTransfer.clearData();
   
   })
 
