@@ -8,19 +8,19 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  font-family: Helvetica, Arial, sans-serif;
-  color: #F69C7E;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #330864;
 }
 
 header, footer {
-  background-color: #F05A28;
+  background-color: #eb91be;
   height: 60px;
   justify-content: center;
   color: white;
 }
 
 header h1 {
-  font-size: 36px;
+  font-size: 30px;
   padding-top: 10px;
 }
 
@@ -37,11 +37,11 @@ footer span {
 }
 
 .list {
-  width: 250px;
-  border: 1px solid #F69C7E;
+  width: 350px;
+  border: 1px solid #eb4c9b;
   margin: 20px;
   border-radius: 10px;
-  color: #F69C7E;
+  color: #eb4c9b;
 }
 
 .list .title {
@@ -51,11 +51,12 @@ footer span {
 
 .list .item {
   padding: 5px;
-  border-bottom: 1px solid #F69C7E;
+  border-top: 1px solid #5241f0;
+  border-bottom: 1px solid #5241f0;
 }
 
 .list input, button {
-  color: #F69C7E;
+  color: #000000;
   margin-left: 5px;
 }
 
@@ -66,15 +67,15 @@ footer span {
 .heading {
   display: flex;
   flex-wrap: wrap;
-  border-bottom: 1px solid #F69C7E;
+  border-bottom: 1px solid #eb4c9b;
 }
 
 .heading .title {
-  width: 200px;
+  width: 100px;
 }
 
 .heading .add {
-  font-size: 30px;
+  font-size: 28px;
   cursor: pointer;
 }
 
