@@ -21,11 +21,11 @@ const create_item = () => {
   item.id = 'item-'+order;
   item.draggable = true;
 
-  document.addEventListener("dragstart", (event) =>  {
+  item.addEventListener("dragstart", (event) =>  {
     return event.DataTransfer.setData('text', event.target.id);
   })
   
-  document.addEventListener("dragend", (event) => {
+  item.addEventListener("dragend", (event) => {
     return event.DataTransfer.clearData(event);
   
   })
